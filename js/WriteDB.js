@@ -1,0 +1,80 @@
+const {writeDb} = require('./DBFunction')
+
+const obj = [
+    {
+        question: "おはようございます",
+        answer: "Goodmorning"
+    },
+    {
+        question: "こんばんは",
+        answer: "Goodevening"
+    },
+    {
+        question: "ありがとう",
+        answer: "Thank you"
+    },
+    {
+        question: "さよなら",
+        answer: "Good Bye"
+    },
+    {
+        question: "いぬ",
+        answer: "Dog"
+    },
+    {
+        question: "ねこ",
+        answer: "Cat"
+    },
+    {
+        question: "おばさん",
+        answer: "Aunt"
+    },
+    {
+        question: "おばあさん",
+        answer: "Grandmother"
+    },
+    {
+        question: "おじさん",
+        answer: "Uncle"
+    },
+    {
+        question: "おじいさん",
+        answer: "Grandfather"
+    },
+    {
+        question: "おかあさん",
+        answer: "Mother"
+    },
+    {
+        question: "おとうさん",
+        answer: "Dad"
+    },
+    {
+        question: "おにいちゃん",
+        answer: "Big brother"
+    },
+    {
+        question: "おねえちゃん",
+        answer: "Older sister"
+    },
+    {
+        question: "いもうと",
+        answer: "Younger sister"
+    },
+    {
+        question: "おとうと",
+        answer: "Younger brother"
+    },
+    {
+        question: "今",
+        answer: "Now"
+    },
+    {
+        question: "げつようび",
+        answer: "Monday"
+    },
+
+]
+
+
+writeDb(obj)
