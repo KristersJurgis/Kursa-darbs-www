@@ -1,3 +1,4 @@
-const {readDb} = require('./DBFunction')
+const { readDb } = require('./DBFunction');
 
-console.log(readDb) 
+const flashcards = readDb(); // default reads 'db.json'
+console.log(flashcards);

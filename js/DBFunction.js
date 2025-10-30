@@ -17,4 +17,22 @@ function writeDb(obj, dbName = 'db.json') {
     }
 }
 
-module.exports = {readDb, writeDb}   
+
+function registerUser(userObj, dbName = 'users.json') {
+    if (!userObj.username || !userObj.email || !userObj.password) {
+        console.log('All user fields are required!');
+        return
+    }
+
+    let users = [];
+    if (fs.existsSync(dbName)) {
+        users = readDb(dbName);
+    }
+    users.push(userObj);
+    writeDb(users, dbName);
+    console.log(`User ${userObj.username} registered successfully.`);
+
+}
+
+
+module.exports = {readDb, writeDb, registerUser};

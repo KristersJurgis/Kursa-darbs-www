@@ -13,10 +13,9 @@ loginLink.addEventListener('click', ()=> {
 
 btnPopup.addEventListener('click', ()=> {
     wrapper.classList.add('active');
-<<<<<<< HEAD
+
 });
-=======
-});
+
 
 document.getElementById('register').addEventListener('Submit', function(event) {
     event.preventDefault();
@@ -66,6 +65,15 @@ document.getElementById('register').addEventListener('Submit', function(event) {
         confirmPasswordError.textContent = ' '; 
     }
 
-
+    if (valid){
+        fetch('/register', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({username: name, email: email, password: password})
+        })
+        .then(res => res.json())
+        .then(data => alert(data.message))
+        .catch(err => console.error(err))
+    }
 })
->>>>>>> 0a9eeb2 (sync local changes)
+
