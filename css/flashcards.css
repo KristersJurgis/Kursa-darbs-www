@@ -5,7 +5,32 @@
   text-align: center;
   width: 600px;
 }
-.difficulty .diffbtn {
+.difficulty .diffgrid {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+.difficulty h1 {
+  padding: 20px;
+}
+
+.flashcard {
+  display: none;
+  width: 300px;
+  height: 400px;
+  background-color: #345678;
+  border: 2px none;
+  border-radius: 40px;
+  text-align: center;
+  margin: 0 auto;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+.flashcard h1 {
+  color: #ccc;
+}
+
+.diffbtn {
   width: 100px;
   height: 40px;
   border: none;
@@ -16,11 +41,7 @@
   color: #ccc;
   cursor: pointer;
 }
-.difficulty .diffbtn:hover {
+
+.diffbtn:hover {
   background-color: #012345;
-}
-.difficulty .diffgrid {
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
 }/*# sourceMappingURL=flashcards.css.map */
