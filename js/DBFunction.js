@@ -4,7 +4,7 @@ const { json } = require('stream/consumers');
 
 
 // No json file parso un atgriez datus ka data  
-function readDb(dbName = 'flasjcarddb.json') {
+function readDb(dbName = 'flasjcardDb.json') {
     const data = fs.readFileSync(dbName, 'utf-8')
     return JSON.parse(data)
 } 
