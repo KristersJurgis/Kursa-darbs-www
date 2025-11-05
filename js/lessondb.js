@@ -72,3 +72,4 @@ Studying Japanese can be both challenging and rewarding. With practice and curio
 ];
 
 lessoncont.forEach(lesson => lessonsdb(lesson));
+ 

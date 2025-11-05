@@ -1,0 +1,26 @@
+.difficulty {
+  justify-content: center;
+  flex: 1;
+  color: #ccc;
+  text-align: center;
+  width: 600px;
+}
+.difficulty .diffbtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: #345678;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border: 2px none rgba(255, 255, 255, 0.5);
+  color: #ccc;
+  cursor: pointer;
+}
+.difficulty .diffbtn:hover {
+  background-color: #012345;
+}
+.difficulty .diffgrid {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}/*# sourceMappingURL=flashcards.css.map */

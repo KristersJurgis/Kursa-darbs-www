@@ -2,10 +2,12 @@ const { error } = require('console');
 const fs = require('fs');
 const { json } = require('stream/consumers');
 
+
+// No json file parso un atgriez datus ka data  
 function readDb(dbName = 'db.json') {
     const data = fs.readFileSync(dbName, 'utf-8')
     return JSON.parse(data)
-}
+} 
 
 function writeDb(obj, dbName = 'db.json') {
     if (!obj) { return console.log('Please provide data to saveq') }
