@@ -1,74 +1,110 @@
 [
   {
     "question": "おはようございます",
-    "answer": "Goodmorning"
+    "answer": "Goodmorning",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "こんばんは",
-    "answer": "Goodevening"
+    "answer": "Goodevening",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "ありがとう",
-    "answer": "Thank you"
+    "answer": "Thank you",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "さよなら",
-    "answer": "Good Bye"
+    "answer": "Good Bye",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "いぬ",
-    "answer": "Dog"
+    "answer": "Dog",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "ねこ",
-    "answer": "Cat"
+    "answer": "Cat",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おばさん",
-    "answer": "Aunt"
+    "answer": "Aunt",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おばあさん",
-    "answer": "Grandmother"
+    "answer": "Grandmother",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おじさん",
-    "answer": "Uncle"
+    "answer": "Uncle",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おじいさん",
-    "answer": "Grandfather"
+    "answer": "Grandfather",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おかあさん",
-    "answer": "Mother"
+    "answer": "Mother",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おとうさん",
-    "answer": "Dad"
+    "answer": "Dad",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おにいちゃん",
-    "answer": "Big brother"
+    "answer": "Big brother",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おねえちゃん",
-    "answer": "Older sister"
+    "answer": "Older sister",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "いもうと",
-    "answer": "Younger sister"
+    "answer": "Younger sister",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "おとうと",
-    "answer": "Younger brother"
+    "answer": "Younger brother",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "今",
-    "answer": "Now"
+    "answer": "Now",
+    "language": "Japanese",
+    "difficulty": "Easy"
   },
   {
     "question": "げつようび",
-    "answer": "Monday"
+    "answer": "Monday",
+    "language": "Japanese",
+    "difficulty": "Easy"
   }
 ]

@@ -16,36 +16,90 @@
         padding: 20px;
     }
 }
+
 .flashcard {
     display: none;
     width: 300px;
     height: 400px;
     background-color: #345678;
+    perspective: 1000px;
     border: 2px none;
     border-radius: 40px;
     text-align: center ;
     margin: 0 auto;
     gap: 100px;
     margin-bottom: 100px;
+    position: relative;
 
     h1 {
         color: #ccc;
         
     }
+
+    .flashcard-inner {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    &flipped .flashcard-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flashcard-front, .flashcard-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .flashcard-front {
+        background-color: #345678;
+    }
+
+    .flashcard-back {
+        background-color: #012345;
+        transform: rotateY(180deg);
+    }
+}
+.grid {
+    width: 200px;
+    display: none;
+    grid-template-columns: auto auto auto;
+    padding-left: 60px;
+    gap: 50px;
+    
 }
 
 .diffbtn {
-        width: 100px;
+    width: 130px;
+    height: 50px;   
+    border: none;
+    border-radius: 30px;
+    background-color: #345678;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border: 2px none rgba(255, 255, 255, .5);
+    color: #ccc;
+    cursor: pointer;
+
+    img {
+        width: 60px;
         height: 40px;
-        border: none;
-        border-radius: 30px;
-        background-color: #345678;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-        border: 2px none rgba(255, 255, 255, .5);
-        color: #ccc;
-        cursor: pointer;
+        justify-content: center;
     }
-    
+    }
+
 .diffbtn:hover {
-        background-color: #012345;
+    background-color: #012345;
+        
 }
