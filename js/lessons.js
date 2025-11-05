@@ -9,7 +9,7 @@ function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
-const selectedLanguage = getQueryParam('lang') || 'japanese'
+const selectedLanguage = getQueryParam('lang') || 'japanese';
 
 fetch("lessondb.json")
 .then(response => response.json())

@@ -1,9 +1,12 @@
-const { readDb } = require('./DBFunction')
+const easyBtn = document.getElementById("easyBtn");
+const mediumBtn = document.getElementById("mediumBtn");
+const hardBtn = document.getElementById("hardBtn");
 
-const quiz = readDb('../KURSA DARBS/db.json')
+function getQueryParam(param) {
+  const UrlLanParams = new URLSearchParams(window.location.search);
+  return UrlLanParams.get(param);
+};
 
-quiz.forEach((item, index) => {
-  console.log(`\nFlashcard #${index + 1}`);
-  console.log(`Q: ${item.question}`);
-  console.log(`A: ${item.answer}`);
-});
+const selectedLanguage = getQueryParam('language') || 'japanese';
+
+fetch("")

@@ -4,12 +4,12 @@ const { json } = require('stream/consumers');
 
 
 // No json file parso un atgriez datus ka data  
-function readDb(dbName = 'db.json') {
+function readDb(dbName = 'flasjcarddb.json') {
     const data = fs.readFileSync(dbName, 'utf-8')
     return JSON.parse(data)
 } 
 
-function writeDb(obj, dbName = 'db.json') {
+function writeDb(obj, dbName = 'flashcardDb.json') {
     if (!obj) { return console.log('Please provide data to saveq') }
     
     try {
