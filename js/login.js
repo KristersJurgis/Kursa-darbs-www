@@ -46,7 +46,7 @@ document.getElementById('register').addEventListener('Submit', function(event) {
     // password validation
 
     const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
+    const confirmPassword = document.getElementById('Confirm-password').value;
     const passwordError = document.getElementById('password-error').value;
     const confirmPasswordError = document.getElementById('confirmPasswordError').value;
     if (password.length < 8 ||  !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/[0-9]/.test(password)){

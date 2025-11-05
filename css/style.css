@@ -103,11 +103,7 @@ nav li:first-child{
 .sidebar a{
     width: 100%;
 }
-.center {
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
+
 .wrapper {
     position: relative;
     width: 400px;
@@ -127,12 +123,8 @@ nav li:first-child{
     transform: scale(1);
 }
 .wrapper.active {
-<<<<<<< HEAD
-    height: 520px;
-=======
     height: 600px;
     gap: 40px;
->>>>>>> 0a9eeb2 (sync local changes)
 }
 .wrapper.active .form-box.login {
     transition: none;
@@ -280,6 +272,29 @@ nav li:first-child{
 }
 .content {
     flex: 1;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+.selection {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.selection_box {
+    
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
+
 }
 @media(max-width: 800px){
     .hideOnMobile {

@@ -10,16 +10,11 @@
 <body>
     <div id="navigacija">
     </div>
-    <div class="content center">
+    <div class="content">
         <section class="wrapper">
-<<<<<<< HEAD
-            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
-            <div class="form-box login">
-                <form action="#">
             <a href="home.html" class="icon-close"><ion-icon name="close-outline"></ion-icon></a>
             <div class="form-box login">
                 <form action="#" id="login">
->>>>>>> 0a9eeb2 (sync local changes)
                     <h2>Login</h2>
                    <div class="input-box">
                         <input type="email" required placeholder=" ">
@@ -43,43 +38,36 @@
             </div>
 
             <div class="form-box register">
-<<<<<<< HEAD
-                <form action="#">
-=======
                 <form action="#" id="register">
->>>>>>> 0a9eeb2 (sync local changes)
                     <h2>Registration</h2>
                     <div class="input-box">
-                        <input type="text" required placeholder=" ">
+                        <input type="text" id="name" required placeholder=" ">
                         <label>Username</label>
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span id="nameError" class="error-message"></span>
                     </div>
                     <div class="input-box">
-<<<<<<< HEAD
-                        <input type="email" required placeholder=" ">
-=======
                         <input id="eMail" type="email" required placeholder=" ">
->>>>>>> 0a9eeb2 (sync local changes)
                         <label>Email</label>
                         <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <span id="emailError" class="error-message"></span>
                     </div>
                     <div class="input-box">
-                        <input type="password" required placeholder=" ">
+                        <input id="password" type="password" required placeholder=" ">
                         <label>Password</label>
                         <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span id="password" class="error-message"></span>
                     </div>
-<<<<<<< HEAD
-=======
                     <div class="input-box">
                         <input type="password"  id="Confirm-password" required placeholder=" ">
                         <label>Confirm Password</label>
                         <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span id="confirmPasswordError" class="error-message"></span>
                     </div>
->>>>>>> 0a9eeb2 (sync local changes)
                     <div class="remember-forgot">
                         <label><input type="checkbox"> I agree to the terms & conditions</label>
                     </div>
-                    <button type="submit" class="btn">Register</button>
+                    <button type="submit" id="Submit" class="btn">Register</button>
                     <div class="login-register">
                         <p>Already have an account? <a href="#" class="login-link">Login</a></p>
                     </div>

@@ -17,7 +17,6 @@ function writeDb(obj, dbName = 'db.json') {
     }
 }
 
-
 function registerUser(userObj, dbName = 'users.json') {
     if (!userObj.username || !userObj.email || !userObj.password) {
         console.log('All user fields are required!');
