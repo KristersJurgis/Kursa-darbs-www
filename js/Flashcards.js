@@ -84,7 +84,7 @@ function showFlashcard(card) {
  `;
 
   const inner = displayflashcard.querySelector(".flashcard-inner");
-  displayflashcard.onclick = () => {
+  inner.onclick = () => {
   inner.classList.toggle("flipped");
  };
 }
