@@ -4,17 +4,33 @@ let index = 0;
 const content = document.getElementById("lessonContent");
 const nextBtn = document.getElementById("nextBtn");
 const backBtn = document.getElementById("backBtn");
+const selectedLanguage = getQueryParam('lang'); 
 
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
-const selectedLanguage = getQueryParam('lang') || 'japanese';
 
 fetch("lessondb.json")
 .then(response => response.json())
 .then(data => { 
-    lessons = data;
+    lessons = data.filter(lesson => {
+        if (selectedLanguage === "jap") return lesson.language === "Japanese";
+        if (selectedLanguage === "eng") return lesson.language === "English";
+        if (selectedLanguage === "lat") return lesson.language === "Latvian";
+        if (selectedLanguage === "esp") return lesson.language === "Spanish";
+        if (selectedLanguage === "ger") return lesson.language === "German";
+        if (selectedLanguage === "rus") return lesson.language === "Russian";
+        if (selectedLanguage === "ger") return lesson.language === "German";
+        if (selectedLanguage === "ger") return lesson.language === "German";
+        if (selectedLanguage === "ger") return lesson.language === "German";
+        if (selectedLanguage === "ger") return lesson.language === "German";
+
+
+
+        return false;
+    });
+    
     if (lessons.length > 0) {
         updateContent(lessons[index])
     }

@@ -54,6 +54,16 @@ function lessonsdb(lessoncont, dbName = 'lessondb.json') {
             return;
         }
     }
+    
+    const duplicate = lessons.find(
+        (lesson) =>
+            lesson.language === lessoncont.language && lesson.title === lessoncont.title
+    );
+
+    if (duplicate) {
+        console.log(`Lesson "${lessoncont.title}" for ${lessoncont.language} already exists. Skipping save.`);
+        return;
+    }
 
     lessons.push(lessoncont);
     

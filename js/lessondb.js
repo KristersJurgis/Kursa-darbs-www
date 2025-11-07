@@ -69,6 +69,31 @@ Studying Japanese can be both challenging and rewarding. With practice and curio
     title: "11th lesson",
     content: "This is just a test, and it will be re-written"
   } ,
+  {
+    id: 12,
+    language: "English",
+    title: "Introduction to english",
+    content: "Test",
+  },
+  {
+    id: 13,
+    language: "English",
+    title: "Introduction to english",
+    content: "Test",
+  },
+  {
+    id: 14,
+    language: "English",
+    title: "Test",
+    content: "Testt",
+  },
+  {
+    id: 15,
+    language: "Russian",
+    title: "Introduction to Russian",
+    content: `Russian is one of the most widely spoken languages in the world. It can be found in many countries, in some more, in others less. Russian has its roots in the Slavic language family, so knowing it can make it easier to understand or learn other languages such as Latvian, Ukrainian, or Belarusian.
+To communicate with Russian speakers without actually knowing the language, it’s recommended to learn some basic phrases and common expressions used in small talk.`
+  }
 ];
 
 lessoncont.forEach(lesson => lessonsdb(lesson));
