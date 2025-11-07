@@ -109,6 +109,126 @@ const obj = [
         language: "Japanese",
         difficulty: "Easy"
     },
+    {
+        question: "привет",
+        answer: "hello",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "досвидания",
+        answer: "goodbye",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "как дела ?",
+        answer: "How are you ?",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "что делаешь",
+        answer: "What are you doing",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "хорошо",
+        answer: "Fine",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "плохо",
+        answer: "Badly",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "нормально",
+        answer: "mid",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "как",
+        answer: "how",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "это",
+        answer: "This",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "незнаю",
+        answer: "Don't know",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "знаю",
+        answer: "I know",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "иду",
+        answer: "I'm coming/going",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "туда",
+        answer: "there",
+        language: "Russian",
+        difficulty: "Easy"
+    },
+    {
+        question: "под",
+        answer: "under",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "над",
+        answer: "over",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "между",
+        answer: "between",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "слева",
+        answer: "left",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "справа",
+        answer: "right",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "прямо",
+        answer: "directly",
+        language: "Russian",
+        difficulty: "Medium"
+    },
+    {
+        question: "зади",
+        answer: "behind",
+        language: "Russian",
+        difficulty: "Medium"
+    },
 ];
 
 

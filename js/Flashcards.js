@@ -59,6 +59,7 @@ fetch("./flashcardDb.json")
 })
 .then(data => {
   console.log("Flashcards loaded:", data);
+  
   allFlashcards = data;
 })
 .catch(err =>{
