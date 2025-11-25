@@ -1,0 +1,44 @@
+/* Spacing between imgs, and centering the div */
+.centering_animation_div{
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
+    padding: 20px;
+    margin: auto;
+}
+/* animation from left to right */
+.animations1{ 
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: relative;
+    animation-name: home_page_animation_left_to_right;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes home_page_animation_left_to_right {
+    from {left: 0px;}
+    to {left:   400px; background-color: gray;}
+}
+
+    /* animations fom right to left */
+.animations2 {
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: relative;
+    animation-name: home_page_animation_right_to_left;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes home_page_animation_right_to_left {
+    from {right: 0px;}
+    to {right: 400px; background-color: purple;}
+}
+
+.animations3 {
+    
+}
