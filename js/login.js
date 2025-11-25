@@ -17,63 +17,106 @@ btnPopup.addEventListener('click', ()=> {
 });
 
 
-document.getElementById('register').addEventListener('Submit', function(event) {
+document.getElementById('register').addEventListener('submit', function(event) {
     event.preventDefault();
 
     let valid = true;
-        // username validation
-    const name = document.getElementById('name').value;
-    if (name === '' || !/^[a-zA-Z ] + $/.test(name)) {
+
+    // Username validation
+    const name = document.getElementById('name').value.trim();
+    if (name === '' || !/^[a-zA-Z ]+$/.test(name)) {
         document.getElementById('nameError').textContent = 'Please enter a valid name.';
         valid = false;
-
-    }
-    else {
-        document.getElementById('nameError').textContent = ''; 
+    } else {
+        document.getElementById('nameError').textContent = '';
     }
 
-    // email validation
-
-    const email = document.getElementById('eMail').value;
-    if (email === '' || !/^[^\s@] + @[^\s@] +\.[^s@]+$/.test(email)) {
+    // Email validation
+    const email = document.getElementById('email').value.trim();
+    if (email === '' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         document.getElementById('emailError').textContent = 'Please enter a valid email.';
         valid = false;
-    }
-    else {
+    } else {
         document.getElementById('emailError').textContent = '';
     }
 
-    // password validation
-
+    // Password validation
     const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('Confirm-password').value;
-    const passwordError = document.getElementById('password-error').value;
-    const confirmPasswordError = document.getElementById('confirmPasswordError').value;
-    if (password.length < 8 ||  !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/[0-9]/.test(password)){
-        passwordError.textContent = 'Password must be atleast 8 characters long, and include uppercase, lowercase and a number.';
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    if (password.length < 8 || !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/[0-9]/.test(password)) {
+        document.getElementById('passwordError').textContent =
+            'Password must be at least 8 characters long and include uppercase, lowercase, and a number.';
         valid = false;
+    } else {
+        document.getElementById('passwordError').textContent = '';
     }
-    else {
-        passwordError.textContent = ' ';
-    // checks if password matches confirm password
-    } 
+
+    // Confirm password match
     if (password !== confirmPassword) {
-        confirmPasswordError.textContent = 'Passwords do not match.';
+        document.getElementById('confirmPasswordError').textContent = 'Passwords do not match.';
         valid = false;
-    }
-    else {
-        confirmPasswordError.textContent = ' '; 
+    } else {
+        document.getElementById('confirmPasswordError').textContent = '';
     }
 
-    if (valid){
-        fetch('/register', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({username: name, email: email, password: password})
+    if (valid) {
+        // Example: show success or send data
+        alert('Registration data is valid! Submitting...');
+        // You can do your fetch POST here
+    }
+});
+
+// Login form validation & submit
+document.getElementById('login').addEventListener('submit', function(event) {
+    event.preventDefault();
+    console.log("Login form submit triggered");
+
+    const email = document.getElementById('loginemail').value.trim();
+    const password = document.getElementById('loginpassword').value;
+    let valid = true;
+
+    if (email === '' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById('loginEmailError').textContent = 'Please enter a valid email.';
+        valid = false;
+    } else {
+        document.getElementById('loginEmailError').textContent = '';
+    }
+
+    if (password.length < 8 || !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/[0-9]/.test(password)) {
+        document.getElementById('loginPasswordError').textContent =
+            'Password must be at least 8 characters long and include uppercase, lowercase, and a number.';
+        valid = false;
+    } else {
+        document.getElementById('loginPasswordError').textContent = '';
+    }
+
+    if (!valid) return; // Stop if validation fails
+
+    fetch('./users.json')
+        .then(response => {
+            if (!response.ok) {
+                alert("Couldn't fetch users data");
+                throw new Error('Fetch failed');
+            }
+            return response.json();
         })
-        .then(res => res.json())
-        .then(data => alert(data.message))
-        .catch(err => console.error(err))
-    }
-})
+        .then(users => {
+            const user = users.find(u => u.email === email);
+            if (!user) {
+                alert('Email not found');
+                valid = false;
+                return;
+            }
+            if (user.password !== password) {
+                alert('Wrong password');
+                valid = false;
+                return;
+            }
 
+            if (valid) {
+                console.log('Login successful!');
+                // Redirect or submit form here
+            }
+        })
+        .catch(error => console.error('Fetch error:', error));
+});
