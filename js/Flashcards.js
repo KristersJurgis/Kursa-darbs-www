@@ -1,3 +1,4 @@
+//Defineti parametri
 const easyBtn = document.getElementById("easyBtn");
 const mediumBtn = document.getElementById("mediumBtn");
 const hardBtn = document.getElementById("hardBtn"); 
@@ -20,7 +21,7 @@ let knewCount = 0;
 let didntknowCount = 0;
 let skipCount = 0;
 
-//  Show difficulty selection buttons, and put outs what difficluty you chose.
+//  parada grutibas izveles pogas, un izvada izveletas grutibas flashcards
 function difficultySelected(selected){
   btngrid.style.display = "grid";
   displayflashcard.style.display = "grid";
@@ -28,12 +29,12 @@ function difficultySelected(selected){
   diffbtns.style.display = "none";
   message.textContent = `You selected: ${selected}`;
 
-  // Filters cards by language and difficultyt
+  // filtre flashcards ar valodu un grutibas limeni
   flashcards = allFlashcards.filter(card =>
     card.difficulty.toLowerCase() === selected.toLowerCase() &&
     card.language.toLowerCase() === selectedLanguage.toLowerCase()
   );
-
+  // ja vairs nav flashcards, tad displayo no flashcards found
   if (flashcards.length === 0) {
     displayflashcard.textContent = "No flashcards found";
     btngrid.style.display = "none";
@@ -44,14 +45,14 @@ function difficultySelected(selected){
   showFlashcard(flashcards[currentIndex]);
 }
 
-// Gets the selected language from the url  
+// dabu izveleto valodu no url
 function getQueryParam(param) {
   const UrlLanParams = new URLSearchParams(window.location.search);
   return UrlLanParams.get(param);
 };
 const selectedLanguage = getQueryParam('language') || 'japanese';
 
-//Loads flashcards from flashcardDb.json
+//Loado flashcards datus no flashcardDb.json
 fetch("./flashcardDb.json")
 .then(res => {
   if (!res.ok) throw new Error(`HTTP error! status ${res.status}`);
@@ -67,11 +68,12 @@ fetch("./flashcardDb.json")
   displayflashcard.textContent = "Error loading flashcards";
 });
 
-//Select difficulty for flashcards
+//grutibas izvele
 easyBtn.addEventListener("click", () => difficultySelected("Easy"));
 mediumBtn.addEventListener("click", () => difficultySelected("Medium"));
 hardBtn.addEventListener("click", ()  => difficultySelected("Hard"));
 
+//displayo flashcard jautajumu, un uzspiezot, parada tulkojumu
 function showFlashcard(card) {
   displayflashcard.innerHTML = `
   <div class="flashcard-inner">
@@ -89,7 +91,7 @@ function showFlashcard(card) {
   inner.classList.toggle("flipped");
  };
 }
-
+//ja tagadejais index ir mazaks neka flashcard skaits, tad parada jaunu flashcard
 function nextFlashcard() {
   if (currentIndex < flashcards.length -1) {
     currentIndex++;
@@ -103,19 +105,19 @@ function nextFlashcard() {
     btngrid.style.display = "none";
   }
 }
-
+//pieskaita +1 pie zinaju 
 knewBtn.addEventListener("click", () => {
   knewCount++;
   console.log("Knew count:", knewCount);
   nextFlashcard();
 });
-
+//pieskaita +1 pie skippoju
 skipBtn.addEventListener("click", () => {
   skipCount++;
   console.log("Skipped count: ", skipCount);
   nextFlashcard();
 });
-
+//pieskaita +1 pie nezinaju
 didntknowBtn.addEventListener("click", () => {
   didntknowCount++;
   console.log("Didn't know count: ", didntknowCount);

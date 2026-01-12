@@ -8,62 +8,62 @@
   {
     "id": 2,
     "language": "Japanese",
-    "title": "2nd lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 2: Hiragana - The Foundation",
+    "content": "Hiragana is the first script learners must master. It is a phonetic alphabet of 46 basic characters, each representing a sound (like 'a', 'ka', 'sa'). It is used for grammatical endings, particles, and native Japanese words not written in Kanji. Start by learning the five vowel sounds (a, i, u, e, o), then build to consonant-vowel combinations. Practice writing them in the correct stroke order—it’s essential for readability and forms the basis for Katakana and Kanji later. Common beginner words written in Hiragana include わたし (watashi - I/me), です (desu - is/am/are), and です (arigatou - thank you)."
   },
   {
     "id": 3,
     "language": "Japanese",
-    "title": "3rd lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 3: Katakana - The Script for Foreign Words",
+    "content": "Katakana is the second essential script, also consisting of 46 characters that correspond to the same sounds as Hiragana. Its primary role is to write loanwords from other languages (e.g., コンピューター - konpyuutaa for 'computer'), foreign names, onomatopoeia, and sometimes for emphasis. Learning Katakana helps you read many modern words used in Japan, from food (ハンバーガー - hanbaagaa) to technology (インターネット - intaanetto). It’s often introduced after Hiragana and is crucial for navigating daily life in Japan."
   },
   {
     "id": 4,
     "language": "Japanese",
-    "title": "4th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 4: Basic Japanese Grammar and Sentence Structure",
+    "content": "Japanese sentences follow a Subject-Object-Verb (SOV) order. The verb always comes at the end. Particles are key—they mark the role of words. For example, 'wa' (は) marks the topic, 'o' (を) marks the direct object, and 'ni' (に) can indicate direction or time. There are no articles (a, an, the) and usually no distinction between singular and plural. Verbs do not change based on the subject (I, you, he). Instead, they change based on tense (past/non-past) and politeness level. Mastering these basics opens the door to forming simple, correct sentences."
   },
   {
     "id": 5,
     "language": "Japanese",
-    "title": "5th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 5: Essential Japanese Greetings and Polite Expressions",
+    "content": "Greetings set the tone for all interactions in Japan. Beyond 'Konnichiwa', learn time-specific greetings: 'Ohayou gozaimasu' (Good morning), 'Konbanwa' (Good evening). 'Arigatou gozaimasu' is a more polite 'thank you'. Introductions are vital: 'Hajimemashite' (Nice to meet you) followed by '[Name] desu'. Apologies are common: 'Sumimasen' (Excuse me/I'm sorry) and 'Gomen nasai' (I apologize). Understanding when to bow slightly during greetings adds cultural appropriateness. Politeness is embedded in the language itself, showing respect for social harmony."
   },
   {
     "id": 6,
     "language": "Japanese",
-    "title": "6th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 6: Introduction to Kanji - Meaningful Characters",
+    "content": "Kanji are logographic characters adapted from Chinese, each representing a concept or idea. There are thousands, but the Ministry of Education designates 2,136 as 'Jouyou Kanji' for common use. Start with simple, high-frequency characters like numbers (一、二、三 - ichi, ni, san), nature (山 - yama/mountain, 川 - kawa/river), and directions (東 - higashi/east). Most Kanji have multiple readings: 'On'yomi' (Chinese-derived sound) and 'Kun'yomi' (Japanese native sound). Learning radicals (the building blocks of Kanji) makes memorization more systematic and less daunting."
   },
   {
     "id": 7,
     "language": "Japanese",
-    "title": "7th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 7: Numbers, Time, and Dates",
+    "content": "Japanese has two sets of numbers: the native Japanese system (used for small counts) and the Sino-Japanese system (based on Chinese, used for most counting, dates, and money). Learn 1-10 in both: hitotsu, futatsu... (native) and ichi, ni, san... (Sino-Japanese). Telling time uses the Sino-Japanese numbers with 'ji' for hours and 'fun'/'pun' for minutes. Days of the week are named after natural elements (日曜日 - Nichiyoubi/Sunday, 'Sun Day'). Months are simply numbers + 'gatsu' (一月 - Ichigatsu/January). Mastering this is essential for scheduling, shopping, and daily conversations."
   },
   {
     "id": 8,
     "language": "Japanese",
-    "title": "8th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 8: Basic Verbs and Conjugation",
+    "content": "Japanese verbs are divided into three groups: Group 1 (U-verbs), Group 2 (Ru-verbs), and Group 3 (Irregular verbs, like 'suru' - to do, and 'kuru' - to come). The polite present tense (also called the '-masu' form) is the first form to learn. For example, 'tabemasu' (I eat), 'mimasu' (I see), 'shimasu' (I do). To make the polite past tense, change '-masu' to '-mashita' (tabemashita - I ate). Verbs are not conjugated by person (I, you, he), which simplifies learning. Start with essential action verbs: 食べる (taberu - to eat), 飲む (nomu - to drink), 行く (iku - to go), 見る (miru - to see)."
   },
   {
     "id": 9,
     "language": "Japanese",
-    "title": "9th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 9: Asking and Answering Simple Questions",
+    "content": "Forming questions in Japanese is straightforward: add the particle 'ka' at the end of a statement. For example, 'Sore wa hon desu' (That is a book) becomes 'Sore wa hon desu ka?' (Is that a book?). Key question words include: 何 (nani/nan - what), どこ (doko - where), だれ (dare - who), いつ (itsu - when), なぜ/どうして (naze/doushite - why), and どのように (dono you ni - how). Answers often omit the subject if it's clear from context. Practice common Q&A patterns like 'Kore wa nan desu ka?' (What is this?) and 'Eigo ga hanasemasu ka?' (Can you speak English?)."
   },
   {
     "id": 10,
     "language": "Japanese",
-    "title": "10th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 10: Everyday Vocabulary - Food, Family, and Shopping",
+    "content": "Build your practical vocabulary for common situations. Food: りんご (ringo - apple), ごはん (gohan - rice/meal), みず (mizu - water), おちゃ (ocha - tea). Family: ちち (chichi - my father), はは (haha - my mother), あに (ani - my older brother), いもうと (imouto - my younger sister). Shopping phrases: いくらですか (Ikura desu ka? - How much is it?), これをください (Kore o kudasai - I'll take this, please), クレジットカードは使えますか (Kurejitto kaado wa tsukaemasu ka? - Do you accept credit cards?). Knowing these words and phrases empowers you to handle basic transactions and describe the world around you."
   },
   {
     "id": 11,
     "language": "Japanese",
-    "title": "11th lesson",
-    "content": "This is just a test, and it will be re-written"
+    "title": "Lesson 11: Understanding Japanese Politeness Levels",
+    "content": "Japanese has distinct speech styles that reflect social hierarchy and relationships. The three main levels are: 1) Plain/Informal (used with close friends/family), 2) Polite/'-masu, desu' form (standard for acquaintances, colleagues, strangers), and 3) Honorific/Humble (Keigo - used in business, formal settings, or to show great respect). Keigo itself divides into 'Sonkeigo' (respectful language elevating others) and 'Kenjougo' (humble language lowering oneself). Beginners should master the polite '-masu, desu' form first, as it is safe and appropriate in most situations. Recognizing these levels is key to respectful communication."
   },
   {
     "id": 12,
@@ -72,13 +72,13 @@
     "content": "Test"
   },
   {
-    "id": 14,
+    "id": 13,
     "language": "English",
     "title": "Test",
     "content": "Testt"
   },
   {
-    "id": 15,
+    "id": 14,
     "language": "Russian",
     "title": "Introduction to Russian",
     "content": "Russian is one of the most widely spoken languages in the world. It can be found in many countries, in some more, in others less. Russian has its roots in the Slavic language family, so knowing it can make it easier to understand or learn other languages such as Latvian, Ukrainian, or Belarusian.\nTo communicate with Russian speakers without actually knowing the language, it’s recommended to learn some basic phrases and common expressions used in small talk."

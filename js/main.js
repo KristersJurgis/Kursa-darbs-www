@@ -23,3 +23,11 @@ fetch('../footer.html')
     document.getElementById('footers').innerHTML = data;
   })
   .catch(err => console.error('Failed to load footer', err));
+
+//Gets review.html file, and loads in home.html
+fetch('../review.html')
+  .then(response => response.text())
+  .then(data =>{
+    document.getElementById('review').innerHTML = data;
+  }) 
+  .catch(err => console.error('failed to load review:', err));
